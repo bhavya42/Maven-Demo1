@@ -1,0 +1,23 @@
+package com.epam.maven_demo;
+import java.util.Comparator;
+	public class sort_Choclates implements Comparator<Choclates>
+	{
+		int op;
+		sort_Choclates(int n)
+		{
+			this.op=n;
+		}
+		public int compare(Choclates a,Choclates b)
+		{
+			switch(op) 
+			{
+				case 1:return a.price-b.price;
+				case 2:return a.weight-b.weight;
+				case 3:return a.no-b.no;
+			}
+			return 0;
+		}
+	}
+
+
+
